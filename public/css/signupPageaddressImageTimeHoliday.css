@@ -1,0 +1,58 @@
+#address-image-time-holdayPageContainer {
+    background-color: #d5d1d1;
+    border-radius: 11px;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+#address-image-time-holdayPageContainer p{
+  width: 320px;; 
+}
+#address-image-time-holdayPageContainerForm{
+    display: flex;
+    flex-direction: column;
+    
+}
+.address-image-time-holdayPageContainerFormInputs{
+    height: 30px;
+    width: 280px;
+}
+#businessOpenAndCloseTime{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 280px;
+}
+#businessOpenTime{
+    display: flex;
+    flex-direction: column;
+
+}
+#businessColseTime{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; 
+}
+#businessHoliday{
+    width: 280px;
+}
+#address-image-time-holdayPage-submit{
+    height: 33px;
+    width: 90px;
+    margin-left: 190px;
+    border-radius: 7px;
+    background-color: #828080
+}
+@media (max-width: 525px){
+    #address-image-time-holdayPageContainer {
+        margin-top: 0px;
+        width: 100%;
+        background-color: white;
+    }
+
+}

@@ -1,0 +1,42 @@
+<%- include('./partials/header.ejs') %>
+
+<br class="brofloginpageondestop">
+<br class="brofloginpageondestop">
+
+<div id="Signuppagecontaner">
+    <br>
+    <h1 id="Signuppagecontanerfirstheading">Sign up</h1>
+    <br>
+    <br>
+    <div id="creatinganewaccountheading">Create a new account for your business</div>
+    <br>
+    <form action="" method="post" id="Sign_up_page_form">
+
+        <input type="text" placeholder="Enter the name of your business" value="<%= businessNameValue %>" name="business_name" id="business_name" >
+            <div id="business_name_error"><%= businessNameErrorList[0] %></div>
+         <br>
+        <div class="dropdown-container-Signuppage-businesse-category">
+            <input type="text" name="business_category" value="<%= businessCategoryValue %>" placeholder="Enter or Select your business category" id="business-category-from">
+            <div id="business_category_error"><%= businessCategoryErrorList[0] %></div>
+            <div id="dropdown-menu-of-business-category">
+                <div class="dropdown-option-of-business-category">Shop</div>
+                <div class="dropdown-option-of-business-category">Hospital and Healthcare</div>
+                <div class="dropdown-option-of-business-category">Company</div>
+                <div class="dropdown-option-of-business-category">Educational Institution</div>
+                <div class="dropdown-option-of-business-category">Restaurant and Food Service</div>
+                <div class="dropdown-option-of-business-category">Hotels and Accommodation</div>
+                <div class="dropdown-option-of-business-category">Transportation</div>
+                <div class="dropdown-option-of-business-category">Entertainment</div>
+                <div class="dropdown-option-of-business-category">Non-Profit Organization</div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Submit" id="submition-of-business-name-and-category">
+        
+    </form>
+    <div id="doseuserhaveanaccounttologin">Do you have an account? <a href="/login">I have to log in</a></div>
+</div>
+
+
+<%- include('./partials/footer.ejs') %>

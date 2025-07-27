@@ -1,0 +1,34 @@
+<%- include('./partials/header.ejs') %>
+
+<div id="industryPage">
+
+<div id="industryanddescriptonpagecontaner">
+
+    <h1>Industry & description</h1>
+    <br>
+    <p>Enter or select the business industry & write a description</p>
+    <br>
+    <form action="" method="post" id="business-industry-descrition-from">
+        <input type="text" value="<%= businessIndustryValue %>" placeholder="Enter or select your business industry" id="business-industry" name="businessIndustry">
+        <div id="business_industry_error" style="color: red; width: 280px;"><%= businessIndustryError[0] %></div>
+        <div id="showing-option-to-businessIndustry-input"></div>
+        <br>
+        <textarea name="businessDescription" id="business-description" cols="33" rows="10" placeholder="Enter your business description. description must 10 words"><%= businessDescriptionValue %></textarea>
+        <div id="business_description_error" style="color: red; width: 280px;"><%= businessDescriptionError[0] %></div>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit" id="submit-industry-description">
+    </form>
+    <br>
+    <br>
+</div>
+</div>
+
+
+
+<%- include('./partials/footer.ejs') %>
+
+
+
+

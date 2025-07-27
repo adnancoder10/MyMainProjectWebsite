@@ -1,0 +1,29 @@
+<%- include('./partials/header.ejs') %>
+
+<div id="business-ower-info-PageContainer">
+    <h1>Business owner info</h1>
+    <br>
+    <form action="" method="post" id="business_ower_info_form">
+        <div id="business-ower-info-PageContainer-second-heading">Enter the name of the person who owns the business </div>
+        <br>
+        <input type="text" name="Signup_business_owner_firstName" value="<%=TheSignupBusinessOI['firstName'] %>" id="Signup_business_owner_firstName" placeholder="Enter first name">
+        <div id="Signup_business_owner_firstName_error" style="color: red;"><%= TheSignupBusinessInfoError['firstNameError'][0] %></div>
+        <br>
+        <br>
+        <input type="text" name="Signup_business_owner_lastName" value="<%= TheSignupBusinessInfoError['lastName'] %>" id="Signup_business_owner_lastName" placeholder="Enter last name">
+        <div id="Signup_business_owner_lastName_error" style="color: red;"><%= TheSignupBusinessInfoError['lastNameError'][0] %></div>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit" id="submit-Signup-buiness-ower-info">
+    
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+
+<%- include('./partials/footer.ejs') %>

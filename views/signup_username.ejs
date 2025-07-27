@@ -1,0 +1,21 @@
+<%- include('./partials/header.ejs') %>
+
+<div id="signup-username-cantainer">
+    <h1>Username</h1>
+    <br>
+    <p>Enter your username to get started with your profile </p>
+    <form action="" method="post" id="signup-username-from">
+        <br>
+        <input type="text" placeholder="Enter your username" value="<%= TheSignupUsernameValuesAndError['UsernameValue']%>" name="SignupUsername" id="signup-username-input">
+        <div id="signup-username-input-error" style="color: red;"><%= TheSignupUsernameValuesAndError['UsernameError']%></div>
+        <br>
+        <br>
+        <br>
+        <input type="submit" id="submit-Signup-Username">
+    </form>
+    <br>
+    <br>
+    <br>
+</div>
+
+<%- include('./partials/footer.ejs') %>

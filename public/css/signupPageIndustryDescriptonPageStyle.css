@@ -1,0 +1,116 @@
+#industryanddescriptonpagecontaner{
+    background-color: #d5d1d1;
+    border-radius: 11px;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
+}
+
+#business-industry{
+    width: 280px;
+    height: 30px;
+}
+
+#industryanddescriptonpagecontaner p{
+    width: 300px;
+    
+
+}
+#submit-industry-description{
+    height: 33px;
+    width: 90px;
+    margin-left: 190px;
+    border-radius: 7px;
+    background-color: #828080
+}
+#categoryFromServer{
+    font-size: 0px;
+}
+.shopIndustries {
+    background-color: #efe9e9;
+    cursor: pointer;
+    padding: 2px;
+
+}
+.shopIndustries:hover{
+    background-color: #d5d1d1;
+}
+
+.HospitalAndHealthcareIndustriesList{
+    background-color: #efe9e9;
+    cursor: pointer;
+    padding: 2px;
+}
+.HospitalAndHealthcareIndustriesList:hover{
+    background-color: #d5d1d1;
+}
+.CompanyList{
+    background-color: #efe9e9;
+    cursor: pointer;
+    padding: 2px;  
+}
+.CompanyList:hover{
+    background-color: #d5d1d1;
+}
+.EducationalInstitutionList{
+    background-color: #efe9e9;
+    cursor: pointer;
+    padding: 2px;   
+}
+.EducationalInstitutionList:hover{
+    background-color: #d5d1d1;
+}
+.RestaurantAndFoodServiceList{
+    background-color: #efe9e9;
+    cursor: pointer;
+    padding: 2px;   
+}
+.RestaurantAndFoodServiceList:hover{
+    background-color: #d5d1d1;
+}
+.HotelsAndAccommodationList{
+    background-color: #efe9e9;
+    cursor: pointer;
+    padding: 2px;  
+}
+.HotelsAndAccommodationList:hover{
+    background-color: #d5d1d1;
+}
+.TransportationList{
+    background-color: #efe9e9;
+    cursor: pointer;
+    padding: 2px;    
+}
+.TransportationList:hover{
+    background-color: #d5d1d1;
+}
+.EntertainmentList{
+    background-color: #efe9e9;
+    cursor: pointer;
+    padding: 2px;    
+}
+.EntertainmentList:hover{
+    background-color: #d5d1d1;
+}
+.NonProfitOrganizationList{
+    background-color: #efe9e9;
+    cursor: pointer;
+    padding: 2px;     
+}
+.NonProfitOrganizationList:hover{
+    background-color: #d5d1d1;
+}
+
+@media (max-width: 525px){
+    #industryanddescriptonpagecontaner{
+        margin-top: 0px;
+        width: 100%;
+        background-color: white;
+    }    
+
+}

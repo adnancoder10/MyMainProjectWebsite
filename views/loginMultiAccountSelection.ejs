@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Account</title>
+<style>
+
+    .container {
+    background-color: #d5d1d1;
+    padding: 40px 30px;
+    border-radius: 15px;
+    max-width: 370px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .account {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 3px 9px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+
+  .account input[type="radio"] {
+    transform: scale(1.2);
+  }
+
+  .profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #888;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #000;
+  }
+
+
+@media (max-width: 525px){
+     .container{
+        margin-top: 0px;
+        width: 100%;
+        background-color: white;
+    }
+
+}
+
+
+</style>
+
+</head>
+<body>
+  <div class="container" >
+    <h1>Select Your Account</h1>
+    <form method="POST" action="/login/select-account">
+      <% accounts.forEach(function(account) { %>
+        <label class="account">
+          <input type="radio" name="userId" value="<%= account.userId %>" required>
+          <img class="profile-img" src="<%= account.profile || '/default-profile.png' %>" alt="profile">
+          <span><%= account.username %></span>
+        </label>
+      <% }) %>
+      <p id="error-message" style="color: red; display: none; margin-top: 10px;">Please select an account to continue.</p>
+      <button type="submit">Continue</button>
+    </form>
+
+  </div>
+</body>
+  <script>
+  const form = document.querySelector('form');
+  const errorMessage = document.getElementById('error-message');
+
+  form.addEventListener('submit', function (e) {
+    const isChecked = form.querySelector('input[type="radio"]:checked');
+
+    if (!isChecked) {
+      e.preventDefault(); // Stop form submission
+      errorMessage.style.display = 'block';
+    } else {
+      errorMessage.style.display = 'none';
+    }
+  });
+
+  </script>
+</html>

@@ -1,0 +1,50 @@
+#loginPageContainer{
+    background-color: #adadad;
+    margin: auto;
+    width: 500px;
+    height: 700px;
+    border-radius: 11px;
+}
+#loginPageContainerHeading{
+    /* border: 2px solid red; */
+    width: 100px;
+    margin: auto;
+    
+}
+.loginPageInputs{
+    height: 30px;
+    width: 280px;
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    
+}
+#enter_emai_or_phone_number_password_longin_page{
+
+    width: 330px;
+    margin: auto;
+}
+#loginpagesubminbotton{
+    height: 33px;
+    width: 90px;
+    margin-left: 300px;
+    border-radius: 7px;
+    background-color: #828080;
+}
+#ifuserwanttocreateanewaccountloginpage{
+    /* border: 1px solid red; */
+    width: 260px;
+    margin: auto;
+}
+@media (max-width: 500px){
+    .brofloginpageondestop{
+        display: none;
+    }
+    #loginPageContainer{
+        background-color: rgb(244, 244, 244);
+        margin: auto;
+        width: 500px;
+        height: 700px;
+        border-radius: 11px;
+    }
+}

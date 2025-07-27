@@ -1,0 +1,36 @@
+#business-ower-info-PageContainer{
+    background-color: #d5d1d1;
+    border-radius: 11px;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+#business-ower-info-PageContainer input{
+    width: 280px;
+    height: 30px;
+}
+
+#business-ower-info-PageContainer-second-heading{
+    width: 300px;
+}
+#business-ower-info-PageContainer #submit-Signup-buiness-ower-info{
+    height: 33px;
+    width: 90px;
+    margin-left: 190px;
+    border-radius: 7px;
+    background-color: #828080
+}
+
+@media (max-width: 525px){
+    #business-ower-info-PageContainer{
+        margin-top: 0px;
+        width: 100%;
+        background-color: white;
+    }
+
+}

@@ -1,0 +1,52 @@
+<%- include('./partials/header.ejs') %>
+
+<br class="brofloginpageondestop">
+<br class="brofloginpageondestop">
+
+<div id="loginPageContainer">
+    <br>
+    <br>
+    <h1 id="loginPageContainerHeading">Log in</h1>
+    <br>
+    <br>
+    <br>
+        <p id="enter_emai_or_phone_number_password_longin_page">Enter username or phone number & password to log in</p>
+    <br>
+    <form method="post">
+
+        <input class="loginPageInputs" type="text" value="<%= TheLoginFormValuesAndError['UsernameORPhoneNumberValue'] %>" placeholder="Enter your email or phone" name="loginUsernameOrPhoneNumber" >
+        <div id="" style="color: red; width: 285px; margin: auto;"><%= TheLoginFormValuesAndError['UsernameORPhoneNumberError'][0] %></div>
+
+        <br>
+        <br>
+        <input class="loginPageInputs" value="<%= TheLoginFormValuesAndError['PasswordValue'][0] %>" type="password" placeholder="Enter your password" name="LoginPassword">
+        <div id="" style="color: red; width: 285px; margin: auto;"><%= TheLoginFormValuesAndError['PasswordError'][0] %></div>
+        <% if (typeof rateLimitError !== 'undefined' && rateLimitError) { %>
+            <div style="color: red; width: 285px; margin: auto;"><%= rateLimitError %></p> </div>
+        <% } %>
+
+        <% if (typeof multiALSTError !== 'undefined' && multiALSTError) { %>
+        <div style="color: red; width: 285px; margin: auto;" class="error-box">
+            <%= multiALSTError %>
+        </div>
+        <% } %>
+
+        <br>
+        <br class="brofloginpageondestop">
+        <br>
+        <!-- <br> -->
+        <br>
+        <input type="submit" value="Log in" id="loginpagesubminbotton"> 
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <div id="ifuserwanttocreateanewaccountloginpage">
+        Do your want to create new a account? <a href="/Signup">Create new account</a>
+    </div>
+
+</div> 
+
+
+<%- include('./partials/footer.ejs') %>

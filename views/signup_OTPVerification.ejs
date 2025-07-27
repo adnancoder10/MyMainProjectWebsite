@@ -1,0 +1,26 @@
+<%- include('./partials/header.ejs') %>
+
+
+<div id="sinup_OTP-verification-PageContainer">
+    <h1>OTP verification</h1>
+    <br>
+    <p>Enter the OTP code received on your email and phone number </p>
+    <form action="" method="post" id="Signup-emailAddress-phoneNumber-verification">
+        <br>
+        <input type="text" value="<%= TheSignupPNAndEAValuesAndError['emailOTPValue'] %>" placeholder="Enter email verification code" name="emailOTP" id="Signup-emailAddress-verification-code">
+        <div id="Signup_emailAddress_verification_code_error" style="color: red;"><%= TheSignupPNAndEAValuesAndError['emailOTPError'][0] %></div>
+        <br>
+        <br>
+        <input type="text" value="<%= TheSignupPNAndEAValuesAndError['numberOTPValue'] %>" placeholder="Enter phone number verification code" name="phoneNumberOTP" id="Signup-phoneNumber-verification-code">
+        <div id="Signup_phoneNumber_verification_code_error" style="color: red;"><%= TheSignupPNAndEAValuesAndError['numberOTPError'][0] %></div>
+        <br>
+        <br>
+        <br>
+        <input type="submit" id="submit-Signup-phonenumber-email-OTP-code">
+    </form>
+    <br>
+    <br>
+    <br>
+</div>
+
+<%- include('./partials/footer.ejs') %>

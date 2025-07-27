@@ -1,0 +1,89 @@
+#Signuppagecontaner{
+    background-color: #d5d1d1;
+    border-radius: 11px;
+    width: 500px;
+    margin: auto;
+    height: 540px
+    
+}
+#Signuppagecontanerfirstheading{
+    width: 110px;
+    margin: auto;
+}
+#creatinganewaccountheading{
+    width: 270px;
+    margin: auto;
+}
+#dropdown-menu-of-business-category{
+    display: none; 
+    width: 280px;
+    margin: auto;
+    background-color: #efe9e9;
+    cursor: pointer;
+    z-index: 10;
+    /* position: ; */
+}
+
+#Signuppagecontaner input:first-child{
+    height: 30px;
+    width: 280px;
+    display: block;
+    margin: auto;
+    
+    
+}
+.dropdown-option-of-business-category:hover{
+    background-color: #434343;
+}
+
+.dropdown-option-of-business-category{
+    padding: 2px 0px;
+}
+#Signuppagecontaner #submition-of-business-name-and-category{
+    height: 33px;
+    width: 90px;
+    display: block;
+    margin-left: 300px;
+    border-radius: 7px;
+    background-color: #828080
+}
+
+#business_name_error{
+    color: red;
+    margin: auto;
+    width: 280px;
+}
+#business_category_error{
+    color: red;
+    margin: auto;
+    width: 280px;  
+    z-index: 93;
+}
+
+#doseuserhaveanaccounttologin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+@media (max-width: 525px){
+    .brofloginpageondestop{
+        display: none;
+    }
+    #Signuppagecontaner{
+        background-color: #fffafa;
+        border-radius: 11px;
+        width: 500px;
+        margin: auto;
+        height: 540px
+    }
+
+}
+
+
+
+
+
+
+

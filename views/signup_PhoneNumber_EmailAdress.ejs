@@ -1,0 +1,27 @@
+<%- include('./partials/header.ejs') %>
+<div id="PhoneNumber-EmailAddress-PageContainer">
+
+    <h1>Phone Number & Email Address</h1>
+    <br>
+    <p>Enter your phone number and email address for business communication </p>
+    <br>
+    <form action="" method="post" id="Signup-business-phoneNumber-emailAddress-form">
+        
+        <input type="number" value="<%= ThePNAndEAEnteredValue['phoneNumber'] %>" placeholder="Enter your phone number for business" name="business_phone_number" id="Signup-business-phoneNumber">
+        <div id="Signup-business-phoneNumber_error" style="color: red;"><%= ThePNAndEAError['phoneNumberError'][0] %></div>
+        <br>
+        <br>
+        <input type="email" value="<%= ThePNAndEAEnteredValue['emailAddress'] %>" placeholder="Enter your phone email for business" name="business_email" id="Signup-business-emailAddress">
+        <div id="Signup-business-emailAddress_error" style="color: red;"><%= ThePNAndEAError['emailAddressError'][0] %></div>
+        <br>
+        <br>
+        <br>
+        <input type="submit" id="submit-Signup-phonenumber-emailAddress">
+    </form>
+    <br>
+    <br>
+    <br>
+
+</div>
+
+<%- include('./partials/footer.ejs') %>
